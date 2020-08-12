@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D724B60-BBD1-07F9-BA9E-574FFE723669" name="INSURED_HOME">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>2759F8BA-C76A-5F83-0627-CE7C9939654A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hID" id="E2ED8C61-977F-65CE-4A96-AC3215B5426E">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the house.]]></commentInRDBMS>
+<generatorID>06BA9C54-5E0C-053B-7236-44B52D65D173</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hPURCHASE_DATE" id="606E139A-265A-5CCF-27C1-2C2AA443F4CD">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date that the home purchased.]]></commentInRDBMS>
+<generatorID>CE066876-62F0-93E9-5D41-5D49593AA412</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hVALUE" id="568EE0D8-001B-CDC3-8CED-C6589704A8C4">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home purchase value.]]></commentInRDBMS>
+<generatorID>36F82174-2252-B13E-1FA8-4CDCC59095B6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hAREA" id="3C60FB5E-F0D9-C29F-13CB-C0AA8C463F5E">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The area of the home in Sq.Ft.]]></commentInRDBMS>
+<generatorID>69E889BB-8B3C-D3CD-A112-47AD366A2BD3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hTYPE" id="8101D1E3-1A1E-21D3-9274-9A1F95C9BB47">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type of home ( one of the value as, S,M,C,T representing Single family, Multi Family, Condominium, Town house respectively).]]></commentInRDBMS>
+<generatorID>7EBA104A-DB80-63BE-2D4C-3B58840D88EB</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hAFN" id="C658E0CD-C24D-F22D-0D3E-97CE468EEC12">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[If there is automatic fire notification to the fire department, the value is 1. Otherwise the value is 0.]]></commentInRDBMS>
+<generatorID>6A7F7C41-AF98-EBAB-5D56-EA5F9A529354</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hHSS" id="0BB57408-C73C-70EB-7FE7-A4D9FE395D98">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the home security system is installed and monitored, the value is 1. Other the value is 0.]]></commentInRDBMS>
+<generatorID>E6774781-6F12-51C8-68E5-DE0F2150472E</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hSP" id="9D2C4B73-1F1C-BAAA-BFF1-09A0A9D601AC">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[If there is an underground swimming pool, the value is U.If there is an overground swimming pool, the value is O.If there is an indoor swimming pool, the value is I.If there is a multiple swimming pool, the value is M.If there is no swimming pool, the value is null.]]></commentInRDBMS>
+<generatorID>00F98F43-F752-B9DE-BDBE-59628C0FDFF8</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hBM" id="57B0C29F-9A85-531F-A9AF-FFD4E30A9BCA">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[If there is a basement, the value is 1. Otherwise the value is 0.]]></commentInRDBMS>
+<generatorID>960DA248-57D7-D579-296C-F29BA74B827B</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hPREMIUM" id="A91AA56D-275B-FD63-0066-44B1A306AD79">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The premium amount of the home]]></commentInRDBMS>
+<generatorID>13A17454-D84B-A8A6-F275-423FC395FFFC</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E17D24B4-488D-2B50-3B0F-E1894383C43F" name="INSURED_HOME_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>1B5CA237-745D-9EA2-9685-340C273AFFA6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2ED8C61-977F-65CE-4A96-AC3215B5426E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97AD44B7-2403-7DA2-103E-B01B5C6BB5B6" name="AINSURANCE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>68C4E573-C95C-4AC3-20B2-CF0062501CB3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="iID" id="7C73339F-B3EC-CEE9-DE11-B22D0FA7F29E">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the insurance.]]></commentInRDBMS>
+<generatorID>7377D365-4827-9C77-2919-4766CC8C70D7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EED9AE9D-FD5B-3048-FE30-D48D6B873333" referredColumn="76CBC5A9-CF9E-5958-88E6-CD9AA1485804"/>
+</associations>
+</Column>
+<Column name="aAMOUNT" id="91AACCA1-8383-EDEA-B605-4D9FCA5DA39B">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The premium amount of the automobile insurance.]]></commentInRDBMS>
+<generatorID>08DE5AF1-B9D2-89E2-D1A4-D7775F27B028</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD94825B-0AFE-01B0-97C8-AB794FD393A4" name="AINSURANCE_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>7878B377-6DCB-7CE3-2B0B-F8F713084885</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C73339F-B3EC-CEE9-DE11-B22D0FA7F29E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17A1446F-1FA9-6ED7-01DD-236F4BF1E881" name="AINSURANCE_INSURANCE_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>08B1DDC5-6AAC-E610-3494-D7B0D7AA0254</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C73339F-B3EC-CEE9-DE11-B22D0FA7F29E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B4CC660-6B84-78F8-CBBC-CB55DDD50BE6" name="IIV">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>5585FEE2-6224-27CA-31F5-C24CF9569E0A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIN" id="AB4EA522-21EE-531F-F6CF-F500656373C2">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>6F066D11-F5C0-C0B4-F75E-8C7C240345AC</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97B5F670-6F1F-D7D4-15EA-E2C63907C270" referredColumn="95C0DC45-F836-0124-FDE1-7997FF1E9B2B"/>
+</associations>
+</Column>
+<Column name="AINSURANCE_iID" id="93CF09EB-EF9D-D02A-07C9-FA3AF0737FEE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>A2C99D82-1CA4-B3C3-0878-C36CCEA31DA6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FC7B698-01E9-1DAD-C39E-8594E4E055A9" referredColumn="7C73339F-B3EC-CEE9-DE11-B22D0FA7F29E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A82C2F6-673E-5A16-A5C2-A247DDAD3DE5" name="IIV_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>BE05EDD2-C1E6-2C64-47CA-5261E37601A5</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB4EA522-21EE-531F-F6CF-F500656373C2"/>
+<colUsage columnID="93CF09EB-EF9D-D02A-07C9-FA3AF0737FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59C53241-5AF9-290E-EB32-3B30F7DB110E" name="IIV_I_VEHICLE_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>B44012F2-EB8B-6CE6-1149-4D9AB8359CAB</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB4EA522-21EE-531F-F6CF-F500656373C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C85CF174-4A49-6AD3-0A78-8E1B94B2FBAF" name="IIV_AINSURANCE_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>41E114F3-A0BA-C001-6013-2BCEB0DBD658</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93CF09EB-EF9D-D02A-07C9-FA3AF0737FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

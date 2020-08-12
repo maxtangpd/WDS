@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B467DA6-D2A7-7ABF-CA99-6F87920BCD5F" name="IIH">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 22:01:09 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="iID" id="26ADCE65-063D-9EDB-2EC7-6F795FB5D961">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:47:59 UTC</createdTime>
+<generatorID>DFEBD8BA-E9AC-011A-7068-F67F618B39E5</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>7377D365-4827-9C77-2919-4766CC8C70D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hID" id="091C8C64-8701-95B8-0AB5-5FA063431D11">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:48:19 UTC</createdTime>
+<generatorID>ED24E7AC-000C-344A-0368-36FA0DF779A3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>06BA9C54-5E0C-053B-7236-44B52D65D173</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC6BF394-6484-A520-649B-B99D7F7ABE9B" name="INSURANCE_INSURED_HOME PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:48:23 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>26ADCE65-063D-9EDB-2EC7-6F795FB5D961</attributeRef>
+<attributeRef>091C8C64-8701-95B8-0AB5-5FA063431D11</attributeRef>
+<attributeRef>26ADCE65-063D-9EDB-2EC7-6F795FB5D961</attributeRef>
+<attributeRef>091C8C64-8701-95B8-0AB5-5FA063431D11</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

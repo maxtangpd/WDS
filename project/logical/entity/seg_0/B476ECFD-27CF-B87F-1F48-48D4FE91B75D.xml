@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B476ECFD-27CF-B87F-1F48-48D4FE91B75D" name="C_INSURANCE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 21:33:26 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cID" id="A6285011-FE79-CD3A-645F-393C767057C2">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:47:24 UTC</createdTime>
+<generatorID>F58BD863-1C62-6692-6357-1E970BCA1DAB</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>95961BF4-8B04-A9A0-05C7-A772FD6FF89E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iID" id="6D23FABB-7752-C17F-E504-BEFEEABB0748">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:47:45 UTC</createdTime>
+<generatorID>6A176E6E-C509-14AA-A68B-2524644AC05F</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>7377D365-4827-9C77-2919-4766CC8C70D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iID1" id="CD8BFA84-CD1F-FAA8-089E-6444045488D3">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:16:50 UTC</createdTime>
+<generatorID>5D17D252-D3F1-3745-3C00-D1CBB3555A04</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>7377D365-4827-9C77-2919-4766CC8C70D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B0BB96A3-4487-112E-CEF1-E05CA1A7A409" name="CUSTOMER_INSURANCE PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:19 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D23FABB-7752-C17F-E504-BEFEEABB0748</attributeRef>
+<attributeRef>A6285011-FE79-CD3A-645F-393C767057C2</attributeRef>
+<attributeRef>A6285011-FE79-CD3A-645F-393C767057C2</attributeRef>
+<attributeRef>6D23FABB-7752-C17F-E504-BEFEEABB0748</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

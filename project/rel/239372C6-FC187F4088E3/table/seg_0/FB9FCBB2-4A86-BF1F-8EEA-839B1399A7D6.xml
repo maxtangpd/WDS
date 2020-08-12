@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB9FCBB2-4A86-BF1F-8EEA-839B1399A7D6" name="INSURANCE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>946278DB-D56A-E1DB-1431-CCF374EB5385</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="iID" id="76CBC5A9-CF9E-5958-88E6-CD9AA1485804">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the insurance.]]></commentInRDBMS>
+<generatorID>7377D365-4827-9C77-2919-4766CC8C70D7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POLICYTYPE" id="C6087D96-BAF9-B790-AADE-192BA2F239EB">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The customer type data value “A” represents Automobile Insurance customer and “H” represents Home insurance customer.]]></commentInRDBMS>
+<generatorID>CC996B68-3B60-F056-D6FC-AD0E5380BC84</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<constraintName>CH_INH_INSURANCE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="entity AINSURANCE"/>
+<valueDef value="H" description="entity HINSURANCE"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="iSTARTDATE" id="2174803E-7171-2069-D1D1-45E4E4B77FA2">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The start date of the insurance.]]></commentInRDBMS>
+<generatorID>0D22F7D2-FD44-460E-69A6-D947D800BB89</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iENDDATE" id="6DDD4240-6035-AF01-438E-52EED14F94CE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The end date of the insurance.]]></commentInRDBMS>
+<generatorID>A31FC714-1921-327D-2002-1C125F74C98F</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iSTATUS" id="7DCE49D7-A988-3A70-85FC-C4F4438CD4B0">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 01:02:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the insurance policy term is current, status column should have value “C”, and if it is expired, it should have value “P”.]]></commentInRDBMS>
+<generatorID>ED744D65-0DB3-54DD-E480-F965FF9BD8C3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD491A0C-7C26-F7E4-0989-5E3C4EAB505C" name="INSURANCE_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>7878B377-6DCB-7CE3-2B0B-F8F713084885</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76CBC5A9-CF9E-5958-88E6-CD9AA1485804"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

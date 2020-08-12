@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4EEE626-E93F-3187-817A-110B54D78856" name="I_VEHICLE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>A6563AEC-DCF3-3230-CA26-D1E966F2491B</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIN" id="95C0DC45-F836-0124-FDE1-7997FF1E9B2B">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the insured vehicle.]]></commentInRDBMS>
+<generatorID>6CAB3411-F04A-486C-5C12-C2C85B9E8326</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vMMY" id="F6505392-43C7-D0FD-0E69-D4C74BFE6C44">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The make-model-year of the vehicle.]]></commentInRDBMS>
+<generatorID>077BAD85-3510-FBDD-BC6B-E24640E3C897</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vSTATUS" id="7CE5AAF9-370E-AE60-3043-4105BF3588D9">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The status of the vehicle can be one of “L”, “F”, or “O” representing “Leased”, Financed”, “and Owned’.]]></commentInRDBMS>
+<generatorID>612692D9-C7EB-BA39-A7FD-05BD83FEC19A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dLICENSE" id="E58C7F31-379A-65C6-DCB5-BC2A476079FD">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 15:44:32 UTC</createdTime>
+<generatorID>290239E4-DAFB-64F0-8E0B-CC774A579499</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1104B11-BD87-392E-2EB7-17259857AB29" referredColumn="FF4FD698-13A0-1074-13C9-974BE6C53970"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6910097-D72D-FE9A-72E4-D893CFBDE97B" name="I_VEHICLE_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>5B7AD0EC-4BD6-D9B5-BEDF-DC0D518AB63A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95C0DC45-F836-0124-FDE1-7997FF1E9B2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0055E44-8D4F-B940-CB32-B3949129A3FD" name="I_VEHICLE_DRIVER_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 15:44:32 UTC</createdTime>
+<generatorID>6A713B0C-3571-C53E-0E33-E6FF8373E038</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E58C7F31-379A-65C6-DCB5-BC2A476079FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

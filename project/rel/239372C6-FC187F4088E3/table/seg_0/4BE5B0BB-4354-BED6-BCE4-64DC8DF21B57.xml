@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BE5B0BB-4354-BED6-BCE4-64DC8DF21B57" name="DRIVER">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>0486AB1D-0BB3-CB15-A552-35A4C2DBBBC7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dLICENSE" id="FF4FD698-13A0-1074-13C9-974BE6C53970">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The license of the driver.]]></commentInRDBMS>
+<generatorID>34DD6D3A-3D8A-C50B-D3A2-60AA651B3252</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dFIRSTNAME" id="8049A17E-12B9-412F-1FCC-80296F9855D8">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The first name of the driver.]]></commentInRDBMS>
+<generatorID>CEF2AD24-2610-9B0B-726B-1BBBD9F16C13</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dLASTNAME" id="B2968B0D-5293-EEA0-09A5-FB404CE65E6B">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The last name of the driver]]></commentInRDBMS>
+<generatorID>4C2E7DE0-170F-B6B0-F5A0-B14554EF5B68</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dBIRTHDATE" id="31D7B060-E210-4202-F470-5C4744686AA8">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The birthdate of the driver]]></commentInRDBMS>
+<generatorID>6310F332-C022-4E4D-A0CB-469DA60B1559</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6E7132D-7607-6E7C-F275-0CC9E223921B" name="DRIVER_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>9ED677C9-DF4C-7314-F1B9-52B70908A123</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4FD698-13A0-1074-13C9-974BE6C53970"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

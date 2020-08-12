@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EDC03302-8C17-0847-3346-CF3186277FCA" name="PAYMENT">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:30:25 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pID" id="7800B96B-4432-8CD6-E122-3406EEC7F2DB">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:32:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the payment]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pDATE" id="0BD6D85E-23D0-BFE1-84F0-C10C89492648">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:32:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of the payment.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pMETHOD" id="B2FC25F4-B8E8-CEBE-36A9-C8F1B1F3096D">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:33:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[ WDS accepts payment either as “PayPal”, “Credit”, “Debit”, “Check"]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inID" id="3AFCD9CC-4699-58C6-2A31-1E85E2E46BF2">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:25:41 UTC</createdTime>
+<generatorID>243716E2-EEBB-E0C5-1DBC-2C9E5DC4CADE</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>B3754819-6A08-E2F8-945C-0FABE37A7995</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CCC6E57-F449-972F-EE4F-3FBAE1B52E21" name="aPAYMENT PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:33:19 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7800B96B-4432-8CD6-E122-3406EEC7F2DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

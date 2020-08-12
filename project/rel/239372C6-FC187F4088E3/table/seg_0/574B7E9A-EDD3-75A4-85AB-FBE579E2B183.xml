@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="574B7E9A-EDD3-75A4-85AB-FBE579E2B183" name="INVOICE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>FE26A7CC-F40A-5A49-34AD-559E8FE4FB94</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inID" id="FFBCF92D-B683-D1D5-48D7-A59A276E944E">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the invoice]]></commentInRDBMS>
+<generatorID>B3754819-6A08-E2F8-945C-0FABE37A7995</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inDATE" id="7DEF4D26-ABF8-9F3C-BB75-DECF278F0935">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of the invoice]]></commentInRDBMS>
+<generatorID>5C7C6330-BFAF-609F-AAA3-98686E38086B</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inDUEDATE" id="0EEDA484-0971-6999-D0B7-E28CDF8084A0">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The due date of the invoice.]]></commentInRDBMS>
+<generatorID>A816F46C-C93A-98E8-78C6-12F5A8E72FFA</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inAMOUNT" id="0F2BCF31-2B66-3802-08EC-F14D90D80602">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The amount of the invoice.]]></commentInRDBMS>
+<generatorID>FF7F017D-F55D-9492-183F-7E7975075188</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iID" id="02FA5066-FF92-C829-C5DB-9A08C2C0A859">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>52F6393D-06AC-9E3A-B7D3-B2F1E5E50358</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37C5EF2E-8D76-D024-6D56-2683629C58C8" referredColumn="7420C17F-1BC3-3B59-8AA2-08B51BD4F0BB"/>
+</associations>
+</Column>
+<Column name="cID" id="7B152747-695F-FD33-3B13-E0F55FC996CA">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>116532CA-A207-6286-C3FA-3E96516AF2B1</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37C5EF2E-8D76-D024-6D56-2683629C58C8" referredColumn="36020104-1516-9B5C-0F2D-B5F840F325AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7460D4DE-6F10-0B9D-E167-57B3C6FEE95D" name="INVOICE_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>6C967456-3C03-ED80-A321-952BF3BA74E6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFBCF92D-B683-D1D5-48D7-A59A276E944E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3709DC56-4D7D-4853-6F00-AA3729F1500C" name="INVOICE_C_INSURANCE_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>8DAC0595-7E06-8C9C-5456-CF863902A79C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02FA5066-FF92-C829-C5DB-9A08C2C0A859"/>
+<colUsage columnID="7B152747-695F-FD33-3B13-E0F55FC996CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

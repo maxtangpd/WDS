@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1104B11-BD87-392E-2EB7-17259857AB29" containerWithKeyObject="C4EEE626-E93F-3187-817A-110B54D78856" localFKIndex="A0055E44-8D4F-B940-CB32-B3949129A3FD" name="I_VEHICLE_DRIVER_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 15:44:32 UTC</createdTime>
+<generatorID>6A713B0C-3571-C53E-0E33-E6FF8373E038</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referredTableLongName>DRIVER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4BE5B0BB-4354-BED6-BCE4-64DC8DF21B57</referredTableID>
+<keyObject>F6E7132D-7607-6E7C-F275-0CC9E223921B</keyObject>
+<referredKeyID>F6E7132D-7607-6E7C-F275-0CC9E223921B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>dLICENSE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

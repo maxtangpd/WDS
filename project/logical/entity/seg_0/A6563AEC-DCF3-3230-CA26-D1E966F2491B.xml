@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A6563AEC-DCF3-3230-CA26-D1E966F2491B" name="I_VEHICLE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:35:32 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VIN" id="6CAB3411-F04A-486C-5C12-C2C85B9E8326">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:36:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the insured vehicle.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vMMY" id="077BAD85-3510-FBDD-BC6B-E24640E3C897">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:36:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The make-model-year of the vehicle.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vSTATUS" id="612692D9-C7EB-BA39-A7FD-05BD83FEC19A">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:39:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[The status of the vehicle can be one of “L”, “F”, or “O” representing “Leased”, Financed”, “and Owned’.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dLICENSE" id="290239E4-DAFB-64F0-8E0B-CC774A579499">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 15:42:31 UTC</createdTime>
+<generatorID>6A713B0C-3571-C53E-0E33-E6FF8373E038</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>34DD6D3A-3D8A-C50B-D3A2-60AA651B3252</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B7AD0EC-4BD6-D9B5-BEDF-DC0D518AB63A" name="INSURED_VEHICLE PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-09 23:40:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6CAB3411-F04A-486C-5C12-C2C85B9E8326</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

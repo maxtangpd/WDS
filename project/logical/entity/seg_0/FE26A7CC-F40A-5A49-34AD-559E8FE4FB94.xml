@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE26A7CC-F40A-5A49-34AD-559E8FE4FB94" name="INVOICE">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:19:31 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="inID" id="B3754819-6A08-E2F8-945C-0FABE37A7995">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the invoice]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inDATE" id="5C7C6330-BFAF-609F-AAA3-98686E38086B">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:20:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of the invoice]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inDUEDATE" id="A816F46C-C93A-98E8-78C6-12F5A8E72FFA">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:20:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[The due date of the invoice.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inAMOUNT" id="FF7F017D-F55D-9492-183F-7E7975075188">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:22:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[The amount of the invoice.]]></commentInRDBMS>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iID" id="52F6393D-06AC-9E3A-B7D3-B2F1E5E50358">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:25:31 UTC</createdTime>
+<generatorID>8DAC0595-7E06-8C9C-5456-CF863902A79C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>6D23FABB-7752-C17F-E504-BEFEEABB0748</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cID" id="116532CA-A207-6286-C3FA-3E96516AF2B1">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:25:31 UTC</createdTime>
+<generatorID>8DAC0595-7E06-8C9C-5456-CF863902A79C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>A6285011-FE79-CD3A-645F-393C767057C2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cID1" id="9E3FF0DB-05E5-CB07-EA34-FB51EE3DD6F6">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:25:31 UTC</createdTime>
+<generatorID>8DAC0595-7E06-8C9C-5456-CF863902A79C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>A6285011-FE79-CD3A-645F-393C767057C2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iID1" id="6FDD1FBE-3DEC-3A36-C6E3-78350599699D">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:25:31 UTC</createdTime>
+<generatorID>8DAC0595-7E06-8C9C-5456-CF863902A79C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="true"/>
+</engineerTo>
+<referedAttribute>6D23FABB-7752-C17F-E504-BEFEEABB0748</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C967456-3C03-ED80-A321-952BF3BA74E6" name="INVOICE PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:20:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="239372C6-F64E-5DBD-EEBC-FC187F4088E3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3754819-6A08-E2F8-945C-0FABE37A7995</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

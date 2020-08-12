@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CE2CC75-6D72-1CC6-E7F9-B8E7B2FF5F2E" name="PAYMENT">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>EDC03302-8C17-0847-3346-CF3186277FCA</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pID" id="AC1DCBD5-EC07-4188-3FA3-A777D4D0C25D">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID of the payment]]></commentInRDBMS>
+<generatorID>7800B96B-4432-8CD6-E122-3406EEC7F2DB</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pDATE" id="F0EC8090-09C0-FE53-2A7F-33177B5C8B83">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of the payment.]]></commentInRDBMS>
+<generatorID>0BD6D85E-23D0-BFE1-84F0-C10C89492648</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pMETHOD" id="9723DB94-3C4B-2C52-B4E8-4DF23438A3B5">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[ WDS accepts payment either as “PayPal”, “Credit”, “Debit”, “Check"]]></commentInRDBMS>
+<generatorID>B2FC25F4-B8E8-CEBE-36A9-C8F1B1F3096D</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inID" id="ECA9753A-151B-8AE6-6421-5BF5F0A7AF89">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>3AFCD9CC-4699-58C6-2A31-1E85E2E46BF2</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="828D5B8C-97CD-E64A-398F-C8CC53941201" referredColumn="FFBCF92D-B683-D1D5-48D7-A59A276E944E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="160DB139-E103-B09F-5FCF-FC6A3CC9966A" name="PAYMENT_PK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 00:55:01 UTC</createdTime>
+<generatorID>9CCC6E57-F449-972F-EE4F-3FBAE1B52E21</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC1DCBD5-EC07-4188-3FA3-A777D4D0C25D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A99DB485-A48A-689B-7194-E17D62F9F96B" name="PAYMENT_INVOICE_FK">
+<createdBy>tangpeidi</createdBy>
+<createdTime>2020-04-10 16:26:23 UTC</createdTime>
+<generatorID>243716E2-EEBB-E0C5-1DBC-2C9E5DC4CADE</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECA9753A-151B-8AE6-6421-5BF5F0A7AF89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
